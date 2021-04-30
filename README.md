@@ -18,12 +18,15 @@ ssh user@172.20.116.162
  
 user@m10:~/AVIRI-demo$ tree -L 1
 .
-|-- best_model.h5
-|-- images
-|-- main_vi.py
-|-- outputs
-|-- samples
-`-- vi_run.sh
+├── best_model.h5
+├── imagenet_utils.py
+├── images
+├── main_vi.py
+├── mmd-vi-app.service
+├── outputs
+├── README.md
+├── samples
+└── vi_run.sh
 ```
  
 Some functionality supported in the web application: https://modstore.org/VI/

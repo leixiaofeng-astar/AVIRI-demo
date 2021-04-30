@@ -1,0 +1,15 @@
+[Unit]
+Description=MMD VI App
+After=syslog.target network.target
+
+[Service]
+WorkingDirectory=/home/user/project/xuxinx/VI
+ExecStart=/home/user/project/xuxinx/VI/vi_run.sh
+User=user
+KillMode=process
+Restart=on-failure
+RestartSec=30s
+
+[Install]
+WantedBy=multi-user.target
+

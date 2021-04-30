@@ -8,14 +8,15 @@ This is the simple AI demo code for Disease-related Visual Impairment Using Reti
 4) The prediction output will be saved in the “./outputs/predictions.csv”, the file keep only one record for current input image, the information will be used to display in web APP.
 
 ## VI project
-https://modstore.org/VI
-The current linux server side code is in 172.20.116.162 /home/user/project/xuxinx/VI
+The live demo can refer to https://modstore.org/VI
+The current backend code is in 172.20.116.162 server, front-end APP is in https://modstore.org/VI/
+images and outputs folder will be created automatically when you run the python file
  
 ```bash
 Login with:
 ssh user@172.20.116.162
  
-user@m10:~/project/xuxinx/VI$ tree -L 1
+user@m10:~/AVIRI-demo$ tree -L 1
 .
 |-- best_model.h5
 |-- images
@@ -55,13 +56,13 @@ Normally the service file is under the system directory as below
 /lib/systemd/system/*
 ```
 
-you can find the service files
+you can find the service files in backend server
 ```bash
 ls /etc/systemd/system/
 mmd-vi-app.service
 ```
 
-The contect of service file is as below
+The content of service file is as below(example only, the folder and running app name could be different based on the setup)
 ```bash
 cat /etc/systemd/system/mmd-vi-app.service
 [Unit]
